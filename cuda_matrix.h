@@ -1,0 +1,2 @@
+/* æÿ’Û≥À∑® */
+extern void matrix_mul();
