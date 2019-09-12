@@ -5,3 +5,5 @@
 1. 显示GPU信息，对应文件为"cuda_getGPUInfo.cu"
 2. 演示向量加运算，对应文件为"cuda_vector_add.cu"
 3. 演示矩阵乘运算，对应文件为"cuda_matrix_mul.cu"
+# 备注
+呀，矩阵乘忘了释放内存
