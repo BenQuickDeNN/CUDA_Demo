@@ -7,7 +7,9 @@
 
 //void getGPUInfo();
 
-/* 统计GPU信息 */
+/**
+* @brief Host端函数-获取GPU信息
+*/
 void getGPUInfo()
 {
 	printf("----------------统计GPU信息----------------\r\n");

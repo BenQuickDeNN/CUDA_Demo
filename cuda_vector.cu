@@ -8,7 +8,13 @@
 
 //void vector_add();
 
-/* cuda向量加法 */
+/**
+* @brief 核函数-向量加
+* @param x 输入向量
+* @param y 输入向量
+* @param z 输出向量
+* @param n 向量长度
+*/
 __global__ void cuda_vector_add(float *x, float *y, float *z, int n)
 {
 	// 获取全局索引（向量数组的索引）
@@ -18,7 +24,9 @@ __global__ void cuda_vector_add(float *x, float *y, float *z, int n)
 	for (int i = index; i < n; i += stride) z[i] = x[i] + y[i];
 }
 
-/* 向量加法 */
+/**
+* @brief Host端函数-向量加
+*/
 void vector_add()
 {
 	printf("----------------计算向量加----------------\r\n");
